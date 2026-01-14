@@ -76,7 +76,7 @@ def test_clear_cart(driver):
     with allure.step("Проверяем, что корзина пустая"):
         assert "Ваша корзина пуста" in driver.page_source
 
-
+@allure.story("Поиск несущетсвующей книги")
 @allure.title("Проверка поиска несуществующей книги")
 def test_search_nonexistent_book(driver):
     main_page = MainPage(driver)

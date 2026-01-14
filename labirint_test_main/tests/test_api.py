@@ -66,7 +66,7 @@ def test_update_user():
         assert response_json["job"] == payload["job"]
         assert "updatedAt" in response_json
 
-
+@allure.story("Авторизация без пароля")
 @pytest.mark.api
 @allure.title("Проверка ошибки авторизации без пароля")
 def test_login_without_password():
